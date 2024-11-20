@@ -1,3 +1,51 @@
 @import "./reset.css";
+@import "./variables.css";
 
 /* usaremos CSS anidado :) */
+#recetas {
+    display: grid;
+    padding: 2em;
+    background-image: url(../images/pdc-inicio-recetas-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+        color: white;
+        font-size: 2em;
+        text-transform:uppercase;
+    }
+
+    #recipe-cards {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+
+        .recipe {
+            background-color: white;
+            display: grid;
+            gap: 1em;
+            text-transform:uppercase;
+        }
+    }
+
+    a.button {
+        padding: 1em;
+        background-color: var(--main-color);
+        text-transform:uppercase;
+
+        
+    }
+    a.button:hover {
+        color: var(--main-color);
+        background-color: var(--secondary-color);
+    }
+
+    a.enlace {
+        color: var(--secondary-color);
+        font-weight: 700;
+    }
+
+    a.enlace:hover {
+        text-decoration: underline;
+    }
+}
