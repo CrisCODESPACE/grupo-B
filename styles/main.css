@@ -1,3 +1,23 @@
 @import "./reset.css";
 
 /* usaremos CSS anidado :) */
+
+.contenedorfooter{
+    background-color:#dfdfdf;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-weight: bold;
+    height: 105px;
+    align-items: center;
+
+}
+
+.enlaces:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.imagen{
+    height: 78.93px;
+}
