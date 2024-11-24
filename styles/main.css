@@ -1,3 +1,128 @@
-@import "./reset.css";
+@import './reset.css';
 
 /* usaremos CSS anidado :) */
+
+/* Primera sección */
+#main-first {
+  background-image: url('../img/platano-es-01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  margin: 25px 0;
+
+  .main-side-tag {
+    margin-top: 20px;
+    margin-left: -135px;
+    width: 200px;
+    position: absolute;
+    top: 120px;
+    transform: translateY(-50%);
+    z-index: 5;
+    transition: margin-left 0.4s ease-in-out;
+
+    &:hover {
+      margin-left: 0;
+    }
+  }
+
+  .main-view-more {
+    color: white;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    width: 980px;
+    height: 140px;
+    padding-bottom: 35px;
+    text-align: left;
+    margin-left: 610px;
+    margin-right: 0;
+    margin-top: 105px;
+    background: rgba(0, 40, 86, 0.6);
+
+    h1 {
+      font-size: 28px;
+      font-weight: bolder;
+      margin: 20px 0 15px 30px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    a {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 14px;
+      text-align: center;
+      margin-bottom: 25px;
+      padding: 12px 30px 10px;
+      text-transform: uppercase;
+      background: #ffd100;
+      color: #002856;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        color: #ffd100;
+        background: #002856;
+      }
+    }
+
+    .view-more a {
+      &:hover {
+        color: #ffd100;
+        background: #002856;
+      }
+    }
+  }
+
+  .dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      background-color: #444;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #f5b800;
+      }
+    }
+  }
+
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4em;
+    color: #ffd100;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+    padding: 10px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #f5b800;
+    }
+
+    &.left {
+      left: 20px;
+    }
+
+    &.right {
+      right: 20px;
+    }
+  }
+}
