@@ -1,3 +1,162 @@
 @import "./reset.css";
 
 /* usaremos CSS anidado :) */
+
+body {
+    background-color: #fdfdfd;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: right;
+    align-items: start;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    height: 750px;
+    background-image: url(//platanodecanarias.es/wp-content/uploads/2024/05/cabecera-landing.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+h1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: #0421b599;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    width: 50%;
+    height: 70px;
+    padding: 80px;
+   margin-top: 300px;
+   margin-bottom: 40px;
+    
+    
+ }
+
+ main #apartado {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 15%;
+    
+    
+ }
+ 
+ 
+#apartado-2 {
+
+    display: flex;
+    justify-content: right;
+    background-image: url(//platanodecanarias.es/wp-content/uploads/2016/10/WEB_.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 545px;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+
+   .ventana {
+
+    background-color: #0421b599;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    direction: ltr;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    
+   } 
+
+
+h2 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: inherit;
+    color: #fdfdfd;
+    padding-bottom: 10px;
+}
+
+p {
+    color: #fdfdfd;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+
+.button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+    box-shadow: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+[type="submit"]:hover {
+
+    background-color: blue;
+    transition-duration: 0.1s;
+    
+}
+}
+
+/*FOOTER*/
+
+.informacion .lista {
+
+    background-color: rgba(128, 128, 128, 0.223);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 2px;
+    width: 100%;
+    height: 70px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    gap: 30px;
+    cursor: pointer;
+    
+
+    }
+
+    .logo {
+
+        width: 125px;
+        margin-bottom: 1px;
+    }
+
+
+
+
+ 
+
+ 
+ 
+
+ 
