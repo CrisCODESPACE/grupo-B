@@ -13,11 +13,11 @@ body {
 
     display: flex;
     justify-content: right;
-    align-items: start;
+    align-items:end;
     width: 100%;
     box-sizing: border-box;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     height: 750px;
     background-image: url(//platanodecanarias.es/wp-content/uploads/2024/05/cabecera-landing.jpg);
     background-size: cover;
@@ -31,7 +31,7 @@ h1 {
 
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items:start;
     background-color: #0421b599;
     font-size: 2.5em;
     font-family: Arial, Helvetica, sans-serif;
@@ -39,8 +39,8 @@ h1 {
     width: 50%;
     height: 70px;
     padding: 80px;
-   margin-top: 300px;
-   margin-bottom: 40px;
+   margin-top: 250px;
+   margin-bottom: 70px;
     
     
  }
@@ -52,7 +52,8 @@ h1 {
     gap: 25px;
     justify-content: center;
     cursor: pointer;
-    margin-left: 15%;
+    margin: 5%;
+
     
     
  }
