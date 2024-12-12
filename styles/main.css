@@ -1,3 +1,91 @@
+
+@import "./reset.css";
+@import "./variables.css";
+
+/* usaremos CSS anidado :) */
+#recetas {
+    font-family:Arial, Helvetica, sans-serif;
+    display: grid;
+    gap:3em;
+    padding: 3em 2em 2em;
+    background-image: url(../images/pdc-inicio-recetas-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: space-evenly;
+
+    h2 {
+        color: white;
+        font-size: 2.5em;
+        text-transform:uppercase;
+    }
+
+    #recipe-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;;
+        max-width: 990px;
+
+        img {
+            max-height: 200px;
+        }
+
+        .card {
+            background-color: white;
+            display: grid;
+            text-transform:uppercase;
+            width: calc(25% - 1.5em);
+
+            .card-text {
+                display: grid;
+                align-content: space-between;
+                gap:1em;
+                padding: 1em;
+                min-height: 200px;
+            }
+        }
+    }
+
+    a.button, a.enlace {
+        font-weight: 700;
+        color: var(--secondary-color);
+    }
+    a.button {
+        padding: 0.5em 2.5em;
+        background-color: var(--main-color);
+        text-transform:uppercase;
+        font-weight: 700;
+        display: inline-block;
+    }
+    a.button:hover {
+        color: var(--main-color);
+        background-color: var(--secondary-color);
+    }
+
+    a.enlace:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Responsive */
+@media (max-width: 960px){
+    #recetas {
+        #recipe-cards {
+            justify-content: space-around;
+            gap: 2em;
+
+            img {
+                max-height: none;
+            }
+
+            .card {
+                width: 40%;
+                min-width: 250px;
+            }
+        }
+    }
+}
+
 @import './reset.css';
 
 /* usaremos CSS anidado :) */
@@ -215,5 +303,4 @@
     }
   }
 }
-
 
